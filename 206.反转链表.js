@@ -1,4 +1,11 @@
 /*
+ * @Author: zengzhe
+ * @Date: 2023-03-14 17:32:19
+ * @LastEditors: zengzhe
+ * @LastEditTime: 2023-03-16 09:54:45
+ * @Description:
+ */
+/*
  * @lc app=leetcode.cn id=206 lang=javascript
  *
  * [206] 反转链表
@@ -17,12 +24,14 @@
  * @return {ListNode}
  */
 var reverseList = function (head) {
-  if (head === null || head.next === null) {
-    return head;
+  let prev = null
+  let current = head
+  while (current) {
+    const next = current.next
+    current.next = prev
+    prev = current
+    current = next
   }
-  let last = reverseList(head.next);
-  head.next.next = head;
-  head.next = null;
-  return last;
-};
+  return prev
+}
 // @lc code=end

@@ -1,0 +1,23 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "1.两数之和.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gorvey/.leetcode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gorvey/.leetcode/issues"
+  },
+  "homepage": "https://github.com/Gorvey/.leetcode#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
